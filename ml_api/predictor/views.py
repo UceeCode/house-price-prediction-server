@@ -2,7 +2,8 @@
 import joblib
 from django.http import JsonResponse
 from rest_framework.decorators import api_view
-from predictor import PredictionSerializer
+from predictor.serializers import PredictionSerializer
+
 
 model = joblib.load("predictor/ml_model.pkl")
 
